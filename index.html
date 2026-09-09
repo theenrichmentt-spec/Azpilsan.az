@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azpilsan | Aspilsan Azerbaijan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root\
+    --blue:#075ca8;
+    --blue2:#0b7bd3;
+    --dark:#062a4a;
+    --text:#16344d;
+    --muted:#6f8292;
+    --light:#f3f8fc;
+    --line:#dfeaf2;
+    --white:#fff;
+\
+
+*\
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+\
+
+html\
+    scroll-behavior:smooth;
+\
+
+body\
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:#fff;
+    overflow-x:hidden;
+\
+
+a\
+    text-decoration:none;
+    color:inherit;
+\
+
+button\
+    font-family:inherit;
+\
+
+.container\
+    width:min(1240px,92%);
+    margin:auto;
+\
+
+/* ================= HEADER ================= */
+
+header\
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:82px;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(10,80,130,.08);
+    z-index:1000;
+\
+
+.nav\
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+\
+
+.logo\
+    display:flex;
+    align-items:center;
+    gap:10px;
+\
+
+.logo-mark\
+    width:38px;
+    height:38px;
+    border-radius:50% 45% 50% 45%;
+    background:linear-gradient(135deg,#0b78c8,#24c0ce);
+    transform:rotate(45deg);
+    position:relative;
+\
+
+.logo-mark:after\
+    content:"";
+    position:absolute;
+    width:18px;
+    height:18px;
+    border:4px solid white;
+    border-radius:50%;
+    top:7px;
+    left:7px;
+\
+
+.logo-text\
+    font-family:'Manrope',sans-serif;
+    font-size:23px;
+    font-weight:800;
+    letter-spacing:-1px;
+    color:#07365d;
+\
+
+.logo-text span\
+    color:#0881c9;
+\
+
+.nav-links\
+    display:flex;
+    align-items:center;
+    gap:34px;
+    font-size:14px;
+    font-weight:600;
+    color:#486176;
+\
+
+.nav-links a\
+    position:relative;
+    transition:.25s;
+\
+
+.nav-links a:hover\
+    color:var(--blue);
+\
+
+.nav-links a:after\
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-9px;
+    width:0;
+    height:2px;
+    background:var(--blue2);
+    transition:.25s;
+\
+
+.nav-links a:hover:after\
+    width:100%;
+\
+
+.nav-right\
+    display:flex;
+    align-items:center;
+    gap:18px;
+\
+
+.lang\
+    border:1px solid var(--line);
+    border-radius:30px;
+    padding:8px 12px;
+    font-size:12px;
+    color:#456;
+    background:white;
+\
+
+.contact-btn\
+    background:var(--blue);
+    color:white;
+    padding:13px 20px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:700;
+    transition:.25s;
+\
+
+.contact-btn:hover\
+    background:var(--dark);
+    transform:translateY(-2px);
+\
+
+.mobile-btn\
+    display:none;
+    border:0;
+    background:none;
+    font-size:25px;
+\
+
+/* ================= HERO ================= */
+
+.hero\
+    min-height:760px;
+    padding-top:82px;
+    background:
+        radial-gradient(circle at 78% 30%,rgba(18,145,222,.20),transparent 32%),
+        linear-gradient(115deg,#f7fbfe 0%,#eef7fc 48%,#e1f1fa 100%);
+    position:relative;
+    overflow:hidden;
+\
+
+.hero:before\
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    border:1px solid rgba(7,92,168,.08);
+    border-radius:50%;
+    right:-200px;
+    top:100px;
+\
+
+.hero:after\
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border:1px solid rgba(7,92,168,.08);
+    border-radius:50%;
+    right:-80px;
+    top:200px;
+\
+
+.hero-inner\
+    min-height:678px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+    position:relative;
+    z-index:2;
+\
+
+.hero-small\
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    color:var(--blue);
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    margin-bottom:24px;
+\
+
+.hero-small i\
+    width:28px;
+    height:2px;
+    background:var(--blue2);
+\
+
+.hero h1\
+    font-family:'Manrope',sans-serif;
+    font-size:clamp(46px,5vw,76px);
+    line-height:1.03;
+    letter-spacing:-3.5px;
+    color:#062d4d;
+    max-width:700px;
+\
+
+.hero h1 span\
+    color:var(--blue);
+\
+
+.hero p\
+    max-width:560px;
+    color:#607687;
+    font-size:17px;
+    line-height:1.8;
+    margin:27px 0 34px;
+\
+
+.hero-buttons\
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+\
+
+.btn-primary\
+    background:var(--blue);
+    color:#fff;
+    padding:16px 25px;
+    border-radius:7px;
+    font-size:14px;
+    font-weight:700;
+    transition:.25s;
+\
+
+.btn-primary:hover\
+    background:#064579;
+    transform:translateY(-2px);
+\
+
+.btn-outline\
+    padding:15px 24px;
+    border:1px solid #b9d1e1;
+    border-radius:7px;
+    color:#184c70;
+    font-size:14px;
+    font-weight:700;
+    background:rgba(255,255,255,.55);
+\
+
+/* battery visual */
+
+.hero-visual\
+    height:530px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+\
+
+.energy-circle\
+    width:410px;
+    height:410px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#ffffff,#dceefa);
+    box-shadow:
+        0 40px 80px rgba(4,67,110,.16),
+        inset 0 0 0 1px rgba(255,255,255,.8);
+    position:relative;
+\
+
+.energy-circle:before,
+.energy-circle:after\
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    border:1px solid rgba(8,107,170,.14);
+\
+
+.energy-circle:before\
+    inset:35px;
+\
+
+.energy-circle:after\
+    inset:75px;
+\
+
+.energy-core\
+    position:absolute;
+    inset:120px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#0676c7,#0ab3c7);
+    box-shadow:0 20px 45px rgba(5,104,166,.3);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-family:'Manrope';
+    font-weight:800;
+    font-size:40px;
+    letter-spacing:-2px;
+\
+
+.energy-core small\
+    display:block;
+    font-size:11px;
+    letter-spacing:2px;
+    margin-top:5px;
+\
+
+.float-card\
+    position:absolute;
+    background:white;
+    box-shadow:0 18px 45px rgba(14,58,88,.14);
+    border-radius:12px;
+    padding:17px 20px;
+    min-width:180px;
+\
+
+.float-card.one\
+    top:72px;
+    right:10px;
+\
+
+.float-card.two\
+    bottom:65px;
+    left:0;
+\
+
+.float-card strong\
+    display:block;
+    color:#093b61;
+    font-size:13px;
+    margin-bottom:5px;
+\
+
+.float-card span\
+    font-size:11px;
+    color:#8295a3;
+\
+
+.dot\
+    display:inline-block;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#11a6c9;
+    margin-right:7px;
+\
+
+/* ================= TRUST ================= */
+
+.trust\
+    background:#fff;
+    border-bottom:1px solid var(--line);
+\
+
+.trust-inner\
+    min-height:125px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+\
+
+.trust-title\
+    max-width:240px;
+    font-size:13px;
+    color:#728696;
+    line-height:1.6;
+\
+
+.trust-items\
+    display:flex;
+    gap:65px;
+    align-items:center;
+\
+
+.trust-item\
+    font-family:'Manrope';
+    font-weight:800;
+    color:#8da1af;
+    font-size:17px;
+\
+
+/* ================= SECTION ================= */
+
+.section\
+    padding:110px 0;
+\
+
+.section-light\
+    background:var(--light);
+\
+
+.section-head\
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:55px;
+    gap:30px;
+\
+
+.eyebrow\
+    color:var(--blue);
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:800;
+    margin-bottom:13px;
+\
+
+.section-title\
+    font-family:'Manrope';
+    font-size:clamp(32px,4vw,50px);
+    letter-spacing:-2px;
+    color:#082f50;
+    line-height:1.1;
+\
+
+.section-description\
+    max-width:460px;
+    color:#718594;
+    line-height:1.7;
+    font-size:14px;
+\
+
+/* ================= PRODUCTS ================= */
+
+.products\
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+\
+
+.product\
+    background:white;
+    border:1px solid #e0ebf2;
+    border-radius:14px;
+    padding:34px;
+    min-height:285px;
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+\
+
+.product:hover\
+    transform:translateY(-7px);
+    box-shadow:0 25px 60px rgba(5,69,110,.11);
+    border-color:#b9d8eb;
+\
+
+.product-number\
+    color:#9ab0bf;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:45px;
+\
+
+.product-icon\
+    width:53px;
+    height:53px;
+    border-radius:11px;
+    background:#eaf5fc;
+    color:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    margin-bottom:22px;
+\
+
+.product h3\
+    font-family:'Manrope';
+    color:#0b3657;
+    font-size:18px;
+    margin-bottom:10px;
+\
+
+.product p\
+    font-size:13px;
+    color:#788b99;
+    line-height:1.65;
+\
+
+.product-arrow\
+    position:absolute;
+    right:28px;
+    bottom:28px;
+    color:#92a7b6;
+\
+
+/* ================= ABOUT ================= */
+
+.about-grid\
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:100px;
+    align-items:center;
+\
+
+.about-visual\
+    height:550px;
+    border-radius:18px;
+    background:
+        linear-gradient(rgba(3,48,80,.15),rgba(3,48,80,.15)),
+        linear-gradient(145deg,#0b5d96,#062e4d);
+    position:relative;
+    overflow:hidden;
+\
+
+.about-visual:before\
+    content:"AZPLSAN";
+    position:absolute;
+    font-family:'Manrope';
+    font-weight:800;
+    font-size:80px;
+    letter-spacing:-5px;
+    color:rgba(255,255,255,.07);
+    transform:rotate(-90deg);
+    top:160px;
+    left:-90px;
+\
+
+.about-grid-circle\
+    position:absolute;
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.2);
+    right:-100px;
+    top:-60px;
+\
+
+.about-content p\
+    color:#718594;
+    line-height:1.85;
+    font-size:15px;
+    margin:25px 0;
+\
+
+.checks\
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:30px;
+\
+
+.check\
+    font-size:13px;
+    font-weight:600;
+    color:#294c63;
+\
+
+.check span\
+    color:var(--blue);
+    margin-right:8px;
+\
+
+/* ================= SOLUTIONS ================= */
+
+.solutions\
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+\
+
+.solution\
+    padding:38px;
+    background:white;
+    border-radius:15px;
+    border:1px solid #deebf3;
+    display:flex;
+    gap:25px;
+    transition:.3s;
+\
+
+.solution:hover\
+    box-shadow:0 20px 50px rgba(7,67,104,.08);
+\
+
+.solution-icon\
+    min-width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#eaf5fc;
+    color:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+\
+
+.solution h3\
+    font-family:'Manrope';
+    color:#0a3556;
+    margin-bottom:10px;
+\
+
+.solution p\
+    color:#7b8e9c;
+    font-size:13px;
+    line-height:1.7;
+\
+
+/* ================= FEATURE ================= */
+
+.feature\
+    background:#052f50;
+    color:white;
+    overflow:hidden;
+    position:relative;
+\
+
+.feature:after\
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.07);
+    right:-250px;
+    top:-180px;
+\
+
+.feature-grid\
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+    min-height:500px;
+\
+
+.feature .eyebrow\
+    color:#42b8df;
+\
+
+.feature h2\
+    font-family:'Manrope';
+    font-size:clamp(35px,4vw,57px);
+    letter-spacing:-2px;
+    line-height:1.1;
+    margin-bottom:25px;
+\
+
+.feature p\
+    color:#b4c8d5;
+    font-size:15px;
+    line-height:1.8;
+    max-width:520px;
+\
+
+.feature-visual\
+    position:relative;
+    height:400px;
+\
+
+.battery\
+    width:270px;
+    height:390px;
+    border:2px solid rgba(255,255,255,.25);
+    border-radius:22px;
+    position:absolute;
+    right:80px;
+    top:10px;
+    background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.01));
+    padding:20px;
+\
+
+.battery:before\
+    content:"";
+    width:70px;
+    height:13px;
+    background:#7896a9;
+    position:absolute;
+    top:-15px;
+    left:98px;
+    border-radius:5px 5px 0 0;
+\
+
+.battery-level\
+    height:72%;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    border-radius:13px;
+    background:linear-gradient(to top,#067bc9,#20c0cf);
+    opacity:.9;
+\
+
+.battery-label\
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:180px;
+    text-align:center;
+    font-family:'Manrope';
+    font-size:40px;
+    font-weight:800;
+\
+
+/* ================= NEWS ================= */
+
+.news\
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+\
+
+.news-card\
+    border:1px solid #dfebf2;
+    border-radius:14px;
+    overflow:hidden;
+    background:white;
+\
+
+.news-image\
+    height:220px;
+    background:linear-gradient(135deg,#d8edf8,#8fc7e5);
+    position:relative;
+\
+
+.news-image:before\
+    content:"AZPLSAN";
+    position:absolute;
+    left:25px;
+    bottom:22px;
+    color:white;
+    font-family:'Manrope';
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:-1px;
+\
+
+.news-content\
+    padding:25px;
+\
+
+.news-date\
+    color:var(--blue);
+    font-size:11px;
+    font-weight:700;
+    margin-bottom:12px;
+\
+
+.news h3\
+    font-family:'Manrope';
+    font-size:18px;
+    line-height:1.35;
+    color:#0b3656;
+    margin-bottom:15px;
+\
+
+.news p\
+    color:#7a8c99;
+    font-size:13px;
+    line-height:1.7;
+\
+
+.read\
+    display:inline-block;
+    margin-top:20px;
+    color:var(--blue);
+    font-size:12px;
+    font-weight:800;
+\
+
+/* ================= CONTACT ================= */
+
+.contact-section\
+    padding:100px 0;
+    background:#f4f9fc;
+\
+
+.contact-box\
+    background:#fff;
+    border-radius:20px;
+    padding:55px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    border:1px solid #deebf2;
+\
+
+.contact-box h2\
+    font-family:'Manrope';
+    color:#073452;
+    font-size:42px;
+    letter-spacing:-2px;
+    margin-bottom:20px;
+\
+
+.contact-box p\
+    color:#738795;
+    line-height:1.8;
+    font-size:14px;
+\
+
+.contact-details\
+    margin-top:30px;
+    display:grid;
+    gap:18px;
+\
+
+.detail\
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+\
+
+.detail-icon\
+    width:38px;
+    height:38px;
+    border-radius:8px;
+    background:#eaf5fc;
+    color:var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+\
+
+.detail strong\
+    display:block;
+    color:#294b61;
+    font-size:12px;
+    margin-bottom:4px;
+\
+
+.detail span\
+    color:#778b99;
+    font-size:13px;
+\
+
+.form\
+    display:grid;
+    gap:14px;
+\
+
+.form input,
+.form textarea\
+    width:100%;
+    border:1px solid #dce8ef;
+    background:#fbfdfe;
+    padding:16px;
+    border-radius:7px;
+    font-family:inherit;
+    outline:none;
+    font-size:13px;
+\
+
+.form textarea\
+    height:125px;
+    resize:none;
+\
+
+.form input:focus,
+.form textarea:focus\
+    border-color:#69acd5;
+\
+
+.form button\
+    border:0;
+    background:var(--blue);
+    color:white;
+    padding:16px;
+    border-radius:7px;
+    font-weight:700;
+    cursor:pointer;
+\
+
+/* ================= FOOTER ================= */
+
+footer\
+    background:#04263f;
+    color:white;
+    padding:65px 0 25px;
+\
+
+.footer-grid\
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+\
+
+.footer-logo\
+    font-family:'Manrope';
+    font-size:25px;
+    font-weight:800;
+    margin-bottom:17px;
+\
+
+.footer-logo span\
+    color:#34b8d5;
+\
+
+.footer p\
+    color:#8ea8b9;
+    font-size:13px;
+    line-height:1.8;
+    max-width:320px;
+\
+
+.footer h4\
+    font-size:13px;
+    margin-bottom:20px;
+\
+
+.footer-links\
+    display:grid;
+    gap:12px;
+\
+
+.footer-links a\
+    color:#8ea8b9;
+    font-size:12px;
+\
+
+.footer-links a:hover\
+    color:white;
+\
+
+.footer-bottom\
+    display:flex;
+    justify-content:space-between;
+    padding-top:23px;
+    color:#668296;
+    font-size:11px;
+\
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px)\
+
+    .nav-links\
+        display:none;
+    \
+
+    .mobile-btn\
+        display:block;
+    \
+
+    .hero-inner,
+    .about-grid,
+    .feature-grid,
+    .contact-box\
+        grid-template-columns:1fr;
+    \
+
+    .hero\
+        min-height:auto;
+    \
+
+    .hero-inner\
+        padding:80px 0;
+    \
+
+    .hero-visual\
+        height:450px;
+    \
+
+    .products\
+        grid-template-columns:1fr 1fr;
+    \
+
+    .news\
+        grid-template-columns:1fr 1fr;
+    \
+
+    .footer-grid\
+        grid-template-columns:1fr 1fr;
+    \
+
+    .trust-items\
+        gap:25px;
+    \
+\
+
+@media(max-width:650px)\
+
+    header\
+        height:70px;
+    \
+
+    .logo-text\
+        font-size:20px;
+    \
+
+    .contact-btn\
+        display:none;
+    \
+
+    .hero\
+        padding-top:70px;
+    \
+
+    .hero h1\
+        font-size:43px;
+        letter-spacing:-2.5px;
+    \
+
+    .hero p\
+        font-size:14px;
+    \
+
+    .energy-circle\
+        width:300px;
+        height:300px;
+    \
+
+    .energy-core\
+        inset:88px;
+        font-size:28px;
+    \
+
+    .float-card.one\
+        right:-5px;
+    \
+
+    .float-card.two\
+        left:-5px;
+    \
+
+    .trust-inner\
+        flex-direction:column;
+        align-items:flex-start;
+        padding:30px 0;
+    \
+
+    .trust-items\
+        flex-wrap:wrap;
+    \
+
+    .section\
+        padding:75px 0;
+    \
+
+    .section-head\
+        display:block;
+    \
+
+    .section-description\
+        margin-top:20px;
+    \
+
+    .products,
+    .solutions,
+    .news\
+        grid-template-columns:1fr;
+    \
+
+    .about-grid\
+        gap:40px;
+    \
+
+    .about-visual\
+        height:350px;
+    \
+
+    .checks\
+        grid-template-columns:1fr;
+    \
+
+    .feature-grid\
+        gap:20px;
+        padding:70px 0;
+    \
+
+    .battery\
+        right:50%;
+        transform:translateX(50%);
+    \
+
+    .contact-box\
+        padding:30px;
+        gap:40px;
+    \
+
+    .contact-box h2\
+        font-size:32px;
+    \
+
+    .footer-grid\
+        grid-template-columns:1fr;
+        gap:35px;
+    \
+
+    .footer-bottom\
+        flex-direction:column;
+        gap:10px;
+    \
+\
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+    <a href="#home" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">az<span>pilsan</span></div>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#home">Ana shif</a>
+        <a href="#about">Haqqmzda</a>
+        <a href="#products">Mhsullar</a>
+        <a href="#solutions">Hllr</a>
+        <a href="#news">Xbrlr</a>
+        <a href="#contact">laq</a>
+    </nav>
+
+    <div class="nav-right">
+        <select class="lang" id="language">
+            <option value="az">AZ</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+        </select>
+
+        <a href="#contact" class="contact-btn">Biziml laq</a>
+
+        <button class="mobile-btn">
+
+</button>
+    </div>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+<div class="container hero-inner">
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            <i></i>
+            AZPLSAN / ASPLSAN AZERBAIJAN
+        </div>
+
+        <h1>
+            Enerjinin
+            <span>glcyini</span>
+            Azrbaycanda qururuq.
+        </h1>
+
+        <p>
+            M\'fcasir enerji v batareya texnologiyalarn bir araya gtirrk
+            daha thl\'fcksiz, daha smrli v dayanql enerji hllri
+            yaradrq.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn-primary">
+                Mhsullara bax 
+
+
+            </a>
+
+            <a href="#about" class="btn-outline">
+                Azpilsan haqqnda
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="energy-circle">
+            <div class="energy-core">
+                A
+            </div>
+        </div>
+
+        <div class="float-card one">
+            <strong>
+                <span class="dot"></span>
+                Energy Technology
+            </strong>
+            <span>Yeni nsil enerji sistemlri</span>
+        </div>
+
+        <div class="float-card two">
+            <strong>ASPLSAN Azerbaijan</strong>
+            <span>Glcyin enerjisi</span>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<section class="trust">
+<div class="container trust-inner">
+
+    <div class="trust-title">
+        Enerji texnologiyalarnda
+        yeni nsil yanama
+    </div>
+
+    <div class="trust-items">
+        <div class="trust-item">ENERGY</div>
+        <div class="trust-item">BATTERY</div>
+        <div class="trust-item">TECHNOLOGY</div>
+        <div class="trust-item">AZERBAIJAN</div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section" id="products">
+<div class="container">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">Mhsullar</div>
+            <h2 class="section-title">
+                Enerji \'fc\'e7\'fcn<br>
+                hazrlanm hllr
+            </h2>
+        </div>
+
+        <p class="section-description">
+            M\'fcxtlif snaye v texnologiya sahlri \'fc\'e7\'fcn
+            y\'fcksk performansl batareya v enerji sistemlri.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+        <div class="product">
+            <div class="product-number">01 / 08</div>
+            <div class="product-icon">
+\'a2\'c2
+</div>
+            <h3>Pil v h\'fcceyrlr</h3>
+            <p>
+                M\'fcxtlif ttbiqlr \'fc\'e7\'fcn y\'fcksk keyfiyytli
+                enerji h\'fcceyrlri v batareya texnologiyalar.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+        <div class="product">
+            <div class="product-number">02 / 08</div>
+            <div class="product-icon">
+
+</div>
+            <h3>E-Mobilite batareyalar</h3>
+            <p>
+                Elektrikli nqliyyat vasitlri \'fc\'e7\'fcn
+                m\'fcasir enerji saxlama sistemlri.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+        <div class="product">
+            <div class="product-number">03 / 08</div>
+            <div class="product-icon">
+\'a2\'c3
+</div>
+            <h3>Enerji saxlama</h3>
+            <p>
+                Enerjinin daha effektiv saxlanmas v
+                idar olunmas \'fc\'e7\'fcn sistemlr.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+        <div class="product">
+            <div class="product-number">04 / 08</div>
+            <div class="product-icon">
+
+</div>
+            <h3>M\'fcdafi sistemlri</h3>
+            <p>
+                M\'fcdafi v x\'fcsusi tyinatl sistemlr
+                \'fc\'e7\'fcn enerji hllri.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+        <div class="product">
+            <div class="product-number">05 / 08</div>
+            <div class="product-icon">
+
+</div>
+            <h3>Havaclq</h3>
+            <p>
+                Aviasiya sistemlri \'fc\'e7\'fcn etibarl
+                akkumulyator v batareya hllri.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+        <div class="product">
+            <div class="product-number">06 / 08</div>
+            <div class="product-icon">
+
+</div>
+            <h3>Robotik sistemlr</h3>
+            <p>
+                Robotik texnologiyalar \'fc\'e7\'fcn kompakt
+                v effektiv enerji sistemlri.
+            </p>
+            <div class="product-arrow">
+
+</div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section section-light" id="about">
+<div class="container about-grid">
+
+    <div class="about-visual">
+        <div class="about-grid-circle"></div>
+    </div>
+
+    <div class="about-content">
+
+        <div class="eyebrow">Azpilsan / Aspilsan Azerbaijan</div>
+
+        <h2 class="section-title">
+            Enerjini yalnz
+            istehsal etmirik.
+            Glcyi qururuq.
+        </h2>
+
+        <p>
+            Azpilsan, m\'fcasir enerji texnologiyalarn Azrbaycan
+            bazarna gtirmk v snaye, nqliyyat, m\'fcdafi v
+            digr sahlr \'fc\'e7\'fcn innovativ enerji hllri tqdim
+            etmk mqsdi dayan m\'fcasir texnologiya platformasdr.
+        </p>
+
+        <p>
+            Mqsdimiz etibarllq, innovasiya v davamllq
+            prinsiplri sasnda yeni nsil enerji ekosistemi
+            yaratmaqdr.
+        </p>
+
+        <div class="checks">
+
+            <div class="check">
+                <span>
+
+</span>
+                Y\'fcksk texnologiya
+            </div>
+
+            <div class="check">
+                <span>
+
+</span>
+                Etibarl hllr
+            </div>
+
+            <div class="check">
+                <span>
+
+</span>
+                nnovativ yanama
+            </div>
+
+            <div class="check">
+                <span>
+
+</span>
+                Davaml enerji
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= SOLUTIONS ================= -->
+
+<section class="section" id="solutions">
+<div class="container">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">Hllr</div>
+            <h2 class="section-title">
+                Snaye \'fc\'e7\'fcn<br>
+                all enerji.
+            </h2>
+        </div>
+
+        <p class="section-description">
+            Frqli sektorlarn ehtiyaclarna uyun
+            enerji sistemlrini bir platformada birldiririk.
+        </p>
+
+    </div>
+
+
+    <div class="solutions">
+
+        <div class="solution">
+            <div class="solution-icon">
+
+</div>
+            <div>
+                <h3>Enerji saxlama sistemlri</h3>
+                <p>
+                    Enerjinin saxlanmas, idar edilmsi v
+                    daha effektiv istifadsi \'fc\'e7\'fcn hllr.
+                </p>
+            </div>
+        </div>
+
+        <div class="solution">
+            <div class="solution-icon">
+
+</div>
+            <div>
+                <h3>Elektrikli mobillik</h3>
+                <p>
+                    Elektrikli nqliyyatn glcyi \'fc\'e7\'fcn
+                    m\'fcasir batareya sistemlri.
+                </p>
+            </div>
+        </div>
+
+        <div class="solution">
+            <div class="solution-icon">
+
+</div>
+            <div>
+                <h3>M\'fcdafi texnologiyalar</h3>
+                <p>
+                    X\'fcsusi tyinatl sistemlr \'fc\'e7\'fcn
+                    dayanql v y\'fcksk performansl enerji.
+                </p>
+            </div>
+        </div>
+
+        <div class="solution">
+            <div class="solution-icon">
+
+</div>
+            <div>
+                <h3>Snaye hllri</h3>
+                <p>
+                    Snaye m\'fcssislrinin x\'fcsusi enerji
+                    ehtiyaclarna uyun texnologiyalar.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= FEATURE ================= -->
+
+<section class="feature">
+<div class="container feature-grid">
+
+    <div>
+
+        <div class="eyebrow">Technology</div>
+
+        <h2>
+            Texnologiyann
+            enerjisi.
+        </h2>
+
+        <p>
+            Enerji sistemlrinin glcyini daha all,
+            daha thl\'fcksiz v daha davaml texnologiyalarla
+            formaladrrq.
+        </p>
+
+        <br>
+
+        <a href="#contact" class="btn-primary">
+            mkdala bala 
+
+
+        </a>
+
+    </div>
+
+
+    <div class="feature-visual">
+
+        <div class="battery">
+
+            <div class="battery-level"></div>
+
+            <div class="battery-label">
+                ENERGY
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= NEWS ================= -->
+
+<section class="section" id="news">
+<div class="container">
+
+    <div class="section-head">
+
+        <div>
+            <div class="eyebrow">Xbrlr</div>
+            <h2 class="section-title">
+                Son yeniliklr
+            </h2>
+        </div>
+
+        <p class="section-description">
+            Azpilsan v enerji texnologiyalar d\'fcnyasndan
+            yeniliklr v layihlr.
+        </p>
+
+    </div>
+
+
+    <div class="news">
+
+        <article class="news-card">
+
+            <div class="news-image"></div>
+
+            <div class="news-content">
+
+                <div class="news-date">
+                    AZPLSAN \'95 TECHNOLOGY
+                </div>
+
+                <h3>
+                    Azrbaycanda yeni nsil enerji
+                    texnologiyalarnn inkiaf
+                </h3>
+
+                <p>
+                    Enerji v batareya sistemlri sahsind
+                    yeni imkanlar v texnologiyalar.
+                </p>
+
+                <a class="read" href="#">
+                    trafl oxu 
+
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-image"></div>
+
+            <div class="news-content">
+
+                <div class="news-date">
+                    AZPLSAN \'95 ENERGY
+                </div>
+
+                <h3>
+                    Enerji saxlama sistemlrinin
+                    glcyi
+                </h3>
+
+                <p>
+                    M\'fcasir enerji saxlama sistemlrinin
+                    snaye \'fc\'e7\'fcn hmiyyti.
+                </p>
+
+                <a class="read" href="#">
+                    trafl oxu 
+
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-image"></div>
+
+            <div class="news-content">
+
+                <div class="news-date">
+                    AZPLSAN \'95 INNOVATION
+                </div>
+
+                <h3>
+                    Davaml enerji \'fc\'e7\'fcn
+                    innovativ yanama
+                </h3>
+
+                <p>
+                    Daha smrli enerji ekosistemi
+                    \'fc\'e7\'fcn yeni texnologiyalar.
+                </p>
+
+                <a class="read" href="#">
+                    trafl oxu 
+
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+<div class="container">
+
+    <div class="contact-box">
+
+        <div>
+
+            <div class="eyebrow">
+                laq
+            </div>
+
+            <h2>
+                Glin birlikd
+                glcyi quraq.
+            </h2>
+
+            <p>
+                Layihniz, mhsullarmz v mkdalq
+                imkanlar haqqnda biziml laq saxlayn.
+            </p>
+
+
+            <div class="contact-details">
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+
+</div>
+
+                    <div>
+                        <strong>\'dcnvan</strong>
+                        <span>Bak, Azrbaycan</span>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+
+</div>
+
+                    <div>
+                        <strong>E-mail</strong>
+                        <span>info@azpilsan.az</span>
+                    </div>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <div class="detail-icon">
+
+</div>
+
+                    <div>
+                        <strong>Telefon</strong>
+                        <span>+994 XX XXX XX XX</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="form" onsubmit="sendForm(event)">
+
+            <input
+                type="text"
+                placeholder="Ad v soyad"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="E-mail"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="irkt"
+            >
+
+            <textarea
+                placeholder="Mesajnz..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Mesaj g\'f6ndr 
+
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+    <div class="footer-grid">
+
+        <div>
+
+            <div class="footer-logo">
+                az<span>pilsan</span>
+            </div>
+
+            <p>
+                Aspilsan Azerbaijan.
+                Yeni nsil enerji v batareya
+                texnologiyalarnn \'fcnvan.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Sayt</h4>
+
+            <div class="footer-links">
+                <a href="#home">Ana shif</a>
+                <a href="#about">Haqqmzda</a>
+                <a href="#products">Mhsullar</a>
+                <a href="#solutions">Hllr</a>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h4>irkt</h4>
+
+            <div class="footer-links">
+                <a href="#news">Xbrlr</a>
+                <a href="#">Karyera</a>
+                <a href="#">Mxfilik siyasti</a>
+                <a href="#contact">laq</a>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h4>laq</h4>
+
+            <div class="footer-links">
+                <a href="#">Bak, Azrbaycan</a>
+                <a href="#">info@azpilsan.az</a>
+                <a href="#">+994 XX XXX XX XX</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            \'a9 2026 Azpilsan. B\'fct\'fcn h\'fcquqlar qorunur.
+        </span>
+
+        <span>
+            Aspilsan Azerbaijan
+        </span>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+/* ================= LANGUAGE ================= */
+
+const language = document.getElementById("language");
+
+language.addEventListener("change", function()\
+
+    const value = this.value;
+
+    if(value === "en")\
+        alert("English version will be available.");
+    \
+
+    if(value === "ru")\
+        alert("   .");
+    \
+
+\);
+
+
+/* ================= FORM ================= */
+
+function sendForm(event)\
+
+    event.preventDefault();
+
+    alert(
+        "Mesajnz qbul edildi. Tezlikl sizinl laq saxlayacaq."
+    );
+
+\
+
+
+/* ================= MOBILE MENU ================= */
+
+const mobileBtn = document.querySelector(".mobile-btn");
+const navLinks = document.querySelector(".nav-links");
+
+mobileBtn.addEventListener("click", function()\
+
+    if(navLinks.style.display === "flex")\
+
+        navLinks.style.display = "none";
+
+    \else\
+
+        navLinks.style.display = "flex";
+
+        navLinks.style.position = "absolute";
+        navLinks.style.top = "70px";
+        navLinks.style.left = "0";
+        navLinks.style.right = "0";
+        navLinks.style.background = "#fff";
+        navLinks.style.padding = "25px";
+        navLinks.style.flexDirection = "column";
+        navLinks.style.alignItems = "flex-start";
+        navLinks.style.boxShadow = "0 20px 40px rgba(0,0,0,.08)";
+
+    \
+
+\);
+
+</script>
+
+</body>
+</html>
